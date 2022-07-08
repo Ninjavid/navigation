@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 
 :root {
   --primaryColor: #fff;
@@ -16,12 +16,12 @@ html {
 body {
   margin: 0;
   background: #000;
-  font-family: nunito, sans-serif;
+  font-family: Nunito, sans-serif;
 }
 
 /* --- Navigation Menu ------------------------------ */
 
-/* overlay */
+/* Overlay */
 .overlay {
   position: fixed;
   z-index: 9;
@@ -29,7 +29,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(0 0 0 / 70%);
+  background-color: rgba(0, 0, 0, 0.7);
   transform: translateX(-100vw);
 }
 
@@ -66,7 +66,7 @@ nav ul li {
 nav li a {
   position: relative;
   top: 45%;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -78,9 +78,9 @@ nav li a:hover {
   transform: scale(1.2);
 }
 
-nav li a ::before {
+nav li a::before {
   content: "";
-  width: 25vh;
+  width: 25vw;
   height: 3px;
   background-color: #fff;
   position: absolute;
@@ -96,34 +96,42 @@ nav li a:hover::before {
 nav li:nth-of-type(1) {
   background-color: var(--navColor1);
 }
+
 nav li:nth-of-type(2) {
   background-color: var(--navColor2);
 }
+
 nav li:nth-of-type(3) {
   background-color: var(--navColor3);
 }
+
 nav li:nth-of-type(4) {
   background-color: var(--navColor4);
 }
+
 nav li:nth-of-type(5) {
   background-color: var(--navColor5);
 }
 
-/* Slide in animation with delay for each nav item */
+/* Slide in animation with delay for each */
 .slide-in-1 {
-  animation: slide-in 0, 0.4s linear 0.2 both;
+  animation: slide-in 0.4s linear 0.2s both;
 }
+
 .slide-in-2 {
-  animation: slide-in 0, 0.4s linear 0.4 both;
+  animation: slide-in 0.4s linear 0.4s both;
 }
+
 .slide-in-3 {
-  animation: slide-in 0, 0.4s linear 0.6 both;
+  animation: slide-in 0.4s linear 0.6s both;
 }
+
 .slide-in-4 {
-  animation: slide-in 0, 0.4s linear 0.8 both;
+  animation: slide-in 0.4s linear 0.8s both;
 }
+
 .slide-in-5 {
-  animation: slide-in 0, 0.4s linear 1 both;
+  animation: slide-in 0.4s linear 1s both;
 }
 
 @keyframes slide-in {
@@ -135,21 +143,26 @@ nav li:nth-of-type(5) {
     transform: translateX(0);
   }
 }
-/* Slide out animation with delay for each nav item */
+
+/* Slide out animation with delay for each */
 .slide-out-1 {
-  animation: slide-out 0, 0.3s linear 0.5s both;
+  animation: slide-out 0.3s linear 0.5s both;
 }
+
 .slide-out-2 {
-  animation: slide-out 0, 0.3s linear 0.4s both;
+  animation: slide-out 0.3s linear 0.4s both;
 }
+
 .slide-out-3 {
-  animation: slide-out 0, 0.3s linear 0.3s both;
+  animation: slide-out 0.3s linear 0.3s both;
 }
+
 .slide-out-4 {
-  animation: slide-out 0, 0.3s linear 0.2s both;
+  animation: slide-out 0.3s linear 0.2s both;
 }
+
 .slide-out-5 {
-  animation: slide-out 0, 0.3s linear 0.1s both;
+  animation: slide-out 0.3s linear 0.1s both;
 }
 
 @keyframes slide-out {

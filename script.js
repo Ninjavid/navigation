@@ -10,10 +10,7 @@ const navItems = [nav1, nav2, nav3, nav4, nav5];
 // Control navigation animation
 function navAnimation(direction1, direction2) {
   navItems.forEach((nav, i) => {
-    nav.classList.replace(
-      `slide-${direction1}-${i + 1}`,
-      `slide-${direction2}-${i + 1}`
-    );
+    nav.classList.replace(`slide-${direction1}-${i + 1}`, `slide-${direction2}-${i + 1}`);
   });
 }
 
@@ -30,8 +27,8 @@ function toggleNav() {
   } else {
     // Animate Out - Overlay
     overlay.classList.replace("overlay-slide-right", "overlay-slide-left");
-    navAnimation("in", "out");
     // Animate Out - nav items
+    navAnimation("in", "out");
   }
 }
 
